@@ -1,0 +1,66 @@
+<!-- MY Solution-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push BUtton</title>
+  </head>
+  <body>
+    <div class="rectangle"></div>
+    <div class="circles"></div>
+
+    <style>
+      body {
+        background: #6592cf;
+      }
+
+      div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .rectangle {
+        width: 300px;
+        height: 150px;
+        background: #243d83;
+      }
+      .circles {
+        width: 250px;
+        height: 250px;
+        background: #6592cf;
+        border-radius: 50%;
+      }
+
+      .circles::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        background: #243d83;
+        border-radius: 50%;
+      }
+
+      .circles::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background: #EEB850;
+        border-radius: 50%;
+      }
+    </style>
+  </body>
+</html>
+
+
+
